@@ -53,7 +53,7 @@ export default function Home() {
 
 
 
-      {details ? (
+      {details && (
         <div className="m-10 text-wrap relative">
 
           <div className="container mx-auto px-4">
@@ -61,8 +61,6 @@ export default function Home() {
           </div>
 
         </div>
-      ) : (
-        console.log("Please upload a Amazon PDF file to extract details.")
       )}
 
 
