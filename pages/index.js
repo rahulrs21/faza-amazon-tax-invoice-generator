@@ -30,9 +30,6 @@ export default function Home() {
       <h1 className="text-2xl text-center font-bold bg-blue-500 text-white uppercase p-5">Amazon Invoice Tax Generator</h1>
      
 
-
-
-
       <form onSubmit={handleUpload} className="text-gray-600 body-font">
         <div className="container mx-auto">
 

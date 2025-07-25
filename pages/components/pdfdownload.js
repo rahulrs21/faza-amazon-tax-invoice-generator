@@ -97,17 +97,17 @@ const PDFDownload = ({ data, invoice }) => {
 
                 <div style={{ display: "flex", alignItems: "center", marginBottom: "8px", justifyContent: "space-between" }}>
                   <span style={{ fontWeight: "500", color: "#64748b" }}>Buyer Name:</span>
-                  <span style={{ color: "#1e293b", fontWeight: "bold" }}>{data.customerName}</span>
+                  <span style={{ color: "#1e293b", fontWeight: "bold" }}>{data?.customerName}</span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", marginBottom: "8px", justifyContent: "space-between" }}>
                   {/* <Hash style={{ width: "16px", height: "16px", marginRight: "8px", color: "#64748b" }} /> */}
                   <span style={{ fontWeight: "500", color: "#64748b" }}>Order ID:</span>
-                  <span style={{ color: "#1e293b", fontFamily: "monospace", fontSize: "0.95rem", fontWeight: "bold" }}>{data.orderNumber}</span>
+                  <span style={{ color: "#1e293b", fontFamily: "monospace", fontSize: "0.95rem", fontWeight: "bold" }}>{data?.orderNumber}</span>
                 </div>
                 <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                   {/* <Calendar style={{ width: "16px", height: "16px", marginRight: "8px", color: "#64748b" }} /> */}
                   <span style={{ fontWeight: "500", color: "#64748b" }}>Date:</span>
-                  <span style={{ color: "#1e293b", fontWeight: "bold" }}>{data.orderDate}</span>
+                  <span style={{ color: "#1e293b", fontWeight: "bold" }}>{data?.orderDate}</span>
                 </div>
 
 
@@ -161,17 +161,17 @@ const PDFDownload = ({ data, invoice }) => {
                 <tbody>
                   <tr style={{ background: "#fff" }}>
                     <td style={{ border: "1px solid #e5e7eb", padding: "16px", color: "#374151" }}>
-                      <div style={{ fontWeight: "500", color: "#1e293b", marginBottom: "4px" }}>{data.productName}</div>
+                      <div style={{ fontWeight: "500", color: "#1e293b", marginBottom: "4px" }}>{data?.productName}</div>
                     </td>
                     <td style={{ border: "1px solid #e5e7eb", padding: "16px", textAlign: "right", color: "#1e293b", fontWeight: "700" }}>
-                       {data.unitPrice}
+                       {data?.unitPrice}
                     </td>
                     <td style={{ border: "1px solid #e5e7eb", padding: "16px", textAlign: "center", color: "#374151", fontWeight: "500" }}>
-                      {data.quantity}
+                      {data?.quantity}
                     </td>
 
                     <td style={{ border: "1px solid #e5e7eb", padding: "16px", textAlign: "right", color: "#1e293b", fontWeight: "700" }}>
-                       {data.subTotal}
+                       {data?.subTotal}
                     </td>
                   </tr>
                 </tbody>
@@ -186,14 +186,14 @@ const PDFDownload = ({ data, invoice }) => {
               <div style={{ background: "#eff6ff", borderRadius: "12px", padding: "10px", border: "1px solid #bfdbfe" }}>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "8px" }}>
                   <span style={{ color: "#64748b" }}>Tax: (5% Vat)</span>
-                  <span style={{ color: "#1e293b", fontWeight: "500" }}>{data.vatValue}</span>
+                  <span style={{ color: "#1e293b", fontWeight: "500" }}>{data?.vatValue}</span>
                 </div>
                 <div style={{ borderTop: "1px solid #bfdbfe", paddingTop: "8px" }}>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                     <span style={{ fontSize: "1.125rem", fontWeight: "600", color: "#1e293b", display: "flex", alignItems: "center" }}>
                       Grand Total:
                     </span>
-                    <span style={{ fontSize: "1.25rem", fontWeight: "700", color: "#2563eb" }}>{data.price}</span>
+                    <span style={{ fontSize: "1.25rem", fontWeight: "700", color: "#2563eb" }}>{data?.price}</span>
                   </div>
                 </div>
               </div>
@@ -207,7 +207,7 @@ const PDFDownload = ({ data, invoice }) => {
                 <MapPin style={{ width: "20px", height: "20px", marginRight: "8px", color: "#2563eb" }} />
                 Ship To
               </h3>
-              <p style={{ color: "#334155", lineHeight: "1.6", marginBottom: "24px" }}>{data.address}</p>
+              <p style={{ color: "#334155", lineHeight: "1.6", marginBottom: "24px" }}>{data?.address}</p>
               <h3 style={{ fontSize: "1.125rem", fontWeight: "600", color: "#1e293b", marginBottom: "8px", display: "flex", alignItems: "center" }}>
                 Terms and Conditions:
               </h3>
